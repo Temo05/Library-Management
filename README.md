@@ -87,17 +87,6 @@ Node.js, Express, MongoDB/Mongoose, JWT, bcryptjs, express-validator, helmet/cor
 - შეფასების დატოვება შესაძლებელია მხოლოდ იმ წიგნზე, რომელიც წევრს ოდესმე ჰქონდა ნასესხები; ერთი წევრი - ერთი შეფასება თითო წიგნზე
 - ჯარიმის გადახდა იხსნება მხოლოდ მაშინ, თუ `Loan.fine > 0` და ჯერ არ არის გადახდილი (`finePaid: false`)
 
-## სამუშაოს გადანაწილება (4 წევრი)
-
-პროექტი 4 დამოუკიდებელ ფუნქციურ ბლოკადაა აგებული, რომელთა ცალ-ცალკე დამუშავება და commit-ი შესაძლებელია:
-
-1. **ავტორიზაცია/მომხმარებლები** — `models/User.js`, `controllers/authController.js`, `controllers/userController.js`, `middleware/authMiddleware.js`, `routes/authRoutes.js`, `routes/userRoutes.js`
-2. **კატალოგი** — `models/Author.js`, `models/Category.js`, `models/Book.js`, შესაბამისი controllers/routes
-3. **გასესხება/რეზერვაცია** — `models/Loan.js`, `models/Reservation.js`, `loanController.js`, `reservationController.js` და მათი routes
-4. **შეფასებები/გადახდები** — `models/Review.js`, `models/Payment.js`, `reviewController.js`, `paymentController.js` და მათი routes
-
-თითოეულმა წევრმა საკუთარი ბლოკი ცალკე feature branch-ზე დაამუშავოს და საკუთარი git identity-დან (`git config user.name/user.email`) დააკომიტოს, რომ commit history-ში ნათლად ჩანდეს ინდივიდუალური წვლილი.
-
 ## ავტორები
 
 - Temuri Jibgashvili
